@@ -6,7 +6,7 @@
 1. [Google Project And Keys](#google-project-and-keys)
 2. [Setup A Google Sheet](#setup-a-google-sheet)
 3. [Create A Jamf Advanced Search](#create-a-jamf-advanced-search)
-4. [Set Up The macOS/Linux Client That Will Run The Script](#set-up-the-macos\/linux-client-that-will-run-the-script)
+4. [Set Up The macOS/Linux Client That Will Run The Script](#set-up-the-macos/linux-client-that-will-run-the-script)
 5. [Modify The Script Variables](#modify-the-script-variables)
 6. [Run The Script](#run-the-script)
 7. [Automate It!](#automate-it\!)
@@ -63,7 +63,7 @@ API information as needed.
 3. Run the script with 
 	* `python3 jamf-to-google.py`
 
-### Automate it!
+### Automate It!
 * In Terminal, use crontab -e to create a new cron job and enter the following settings
 	* `*/60 * * * * cd /Volumes/path/to/where/scrip/lives && /usr/bin/python3 jamf-to-google.py`
 * Use https://crontab.guru/ to customize the schedule
