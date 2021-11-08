@@ -3,15 +3,15 @@
 *Requires Google Apps for Domain/Education*
 
 ### Overview
-1. Google Project And Keys
-2. Setup A Google Sheet
-3. Create A Jamf Advanced Search
-4. Set Up The Client (macOS or Linux) That Will Run The Script
-5. Modify The Script Variables
-6. Run The Script
-7. Automate It!
+1. [Google Project And Keys](#google-project-and-keys)
+2. [Setup A Google Sheet](#setup-a-google-sheet)
+3. [Create A Jamf Advanced Search](#create-a-jamf-advanced-search)
+4. [Set Up The macOS/Linux Client That Will Run The Script](#set-up-the-macos/linux-client-that-will-run-the-script)
+5. [Modify The Script Variables](#modify-the-script-variables)
+6. [Run The Script](#run-the-script)
+7. [Automate It!](#automate-it!)
 
-### Google Project and Keys
+### Google Project And Keys 
 Create the developer project by going to https://console.cloud.google.com/ and sign in
  1. Create a new project and give it a descriptive name.
  2. Configure the following settings: 
@@ -37,7 +37,7 @@ Create the developer project by going to https://console.cloud.google.com/ and s
 * Create your advanced search as desired, including the desired display fields.
 * Copy the search id to a safe location (found in the URL - “Searches.html?id=##”)
 
-### Set Up The Client (macOS or Linux) That Will Run The Script
+### Set Up The macOS/Linux Client That Will Run The Script
 1. Install python3 command line tools:
 	* `xcode-select --install`
 2. Install the additional python helpers by downloading the requirements.txt and running this command
