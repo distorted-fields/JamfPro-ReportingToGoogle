@@ -58,12 +58,12 @@ API information as needed.
 
 ### Run The Script
 1. Using terminal cd into the directory with jamf-to-google.py
-	*`cd /Volumes/path/to/where/scrip/lives`
+	* `cd /Volumes/path/to/where/scrip/lives`
 2. *Reminder keys.json should be in this directory as well, or the script should be updated to point to where it is.*
 3. Run the script with 
-	*`python3 jamf-to-google.py`
+	* `python3 jamf-to-google.py`
 
 ### Automate it!
-In Terminal, use crontab -e to create a new cron job and enter the following settings
-	*`*/60 * * * * cd /Volumes/path/to/where/scrip/lives && /usr/bin/python3 jamf-to-google.py`
-Use https://crontab.guru/ to customize the schedule
+* In Terminal, use crontab -e to create a new cron job and enter the following settings
+	* `*/60 * * * * cd /Volumes/path/to/where/scrip/lives && /usr/bin/python3 jamf-to-google.py`
+* Use https://crontab.guru/ to customize the schedule
