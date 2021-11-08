@@ -6,10 +6,10 @@
 1. [Google Project And Keys](#google-project-and-keys)
 2. [Setup A Google Sheet](#setup-a-google-sheet)
 3. [Create A Jamf Advanced Search](#create-a-jamf-advanced-search)
-4. [Set Up The macOS/Linux Client That Will Run The Script](#set-up-the-macos/linux-client-that-will-run-the-script)
+4. [Set Up The macOS or Linux Client That Will Run The Script](#set-up-the-macos-or-linux-client-that-will-run-the-script)
 5. [Modify The Script Variables](#modify-the-script-variables)
 6. [Run The Script](#run-the-script)
-7. [Automate It!](#automate-it\!)
+7. [Automate It](#automate-it)
 
 ### Google Project And Keys 
 Create the developer project by going to https://console.cloud.google.com/ and sign in
@@ -37,7 +37,7 @@ Create the developer project by going to https://console.cloud.google.com/ and s
 * Create your advanced search as desired, including the desired display fields.
 * Copy the search id to a safe location (found in the URL - “Searches.html?id=##”)
 
-### Set Up The macOS/Linux Client That Will Run The Script
+### Set Up The macOS or Linux Client That Will Run The Script
 1. Install python3 command line tools:
 	* `xcode-select --install`
 2. Install the additional python helpers by downloading the requirements.txt and running this command
@@ -63,7 +63,7 @@ API information as needed.
 3. Run the script with 
 	* `python3 jamf-to-google.py`
 
-### Automate It!
+### Automate It
 * In Terminal, use crontab -e to create a new cron job and enter the following settings
 	* `*/60 * * * * cd /Volumes/path/to/where/scrip/lives && /usr/bin/python3 jamf-to-google.py`
 * Use https://crontab.guru/ to customize the schedule
