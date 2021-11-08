@@ -1,43 +1,45 @@
 # Jamf To Google erporting
 
-QuickNav:
-Create the developer project so you can get the OAuth key
-Setup a Google Sheet
-Create advanced search
-Client (macOS or Linux) that will run the script
-Run the script
-Automate it!
+*Requires Google Apps for Domain/Education*
 
-Create the developer project so you can get the OAuth key
-Go to https://console.cloud.google.com/ and sign in
-Create a new project
-Give the project a name and the following settings: 
-Enable the Google Sheets API - https://console.cloud.google.com/apis/api/sheets.googleapis.com
-Click on Credentials, Click Add Credentials
-Click on Service Account
-Create a new account with a meaningful name
-Copy the Client ID and email address to a safe location
-Create an access key
-From the actions menu of the service account select “Manage keys”
-Create a new key with json as the key type
-The json key should download to your computer - rename it keys.json
-The .json file should be saved in the same folder as the python script
+### Overview
+1. Google Project and Keys
+2. Setup a Google Sheet
+3. Create a Jamf Advanced Search
+4. Setting up client (macOS or Linux) that will run the script
+5. Run the script
+6. Automate it!
 
-Setup a Google Sheet
-Sign into drive.google.com as the api user or yourself and create a new sheet.
-Share that sheet with the service account user above
-Give the Workbook a name
-Give the Sheet a name
-Copy the spreadsheet key to safe location (Part of the URL that is before /edit )
-Looks like this: 1pasdfsBr_8a3anlLDIdiSLENlsdnOK9s7bJqhdGow
+### Google Project and Keys
+Create the developer project by going to https://console.cloud.google.com/ and sign in
+ 1. Create a new project and give it a descriptive name.
+ 2. Configure the following settings: 
+	* Enable the Google Sheets API - https://console.cloud.google.com/apis/api/sheets.googleapis.com
+	* Click on Credentials, Click Add Credentials
+	* Click on Service Account
+		* Create a new account with a meaningful name.
+		* Copy the Client ID and email address to a safe location.
+		* Create an access key.
+	* From the actions menu of the service account select “Manage keys”
+		* Create a new key with json as the key type.
+		* The json key should download to your computer, rename it keys.json.
+		* The keys.json file should be saved in the same folder as the python script later on.
 
-Create advanced search
-Create an advanced search as desired, 
-Copy the id to a safe location (found in the URL - “Searches.html?id=#”)
+### Setup a Google Sheet
+* Sign into drive.google.com as the api user above or yourself and create a new sheet. If you sign in as yourself, then share the sheet with full edit access to the service account above. 
+* Give the Workbook a name.
+* Give your Import tab/sheet a name.
+* Copy the spreadsheet key to safe location 
+	* (The key is the part of the URL that is before /edit, usually looks like this: 1pasdfsBr_8a3anlLDIdiSLENlsdnOK9s7bJqhdGow)*
 
-Client (macOS or Linux) that will run the script
-Install python3 command line tools - xcode-select --install 
-Run ( sudo pip3 install --upgrade -r /path/to/requirements.txt ) or 
+### Create a Jamf Advanced Search
+* Create your advanced search as desired, including the desired display fields.
+* Copy the search id to a safe location (found in the URL - “Searches.html?id=##”)
+
+### Setting up client (macOS or Linux) that will run the script
+1. Install python3 command line tools
+	`xcode-select --install`
+2. sudo pip3 install --upgrade -r /path/to/requirements.txt ) or 
 sudo pip3 install --upgrade pip
 sudo pip3 install --upgrade gspread
 sudo pip3 install --upgrade oauth2client
