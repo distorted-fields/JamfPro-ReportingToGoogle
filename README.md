@@ -6,10 +6,10 @@
 1. [Google Project And Keys](#google-project-and-keys)
 2. [Setup A Google Sheet](#setup-a-google-sheet)
 3. [Create A Jamf Advanced Search](#create-a-jamf-advanced-search)
-4. [Set Up The macOS/Linux Client That Will Run The Script](#set-up-the-macos/linux-client-that-will-run-the-script)
+4. [Set Up The macOS/Linux Client That Will Run The Script](#set-up-the-macos\/linux-client-that-will-run-the-script)
 5. [Modify The Script Variables](#modify-the-script-variables)
 6. [Run The Script](#run-the-script)
-7. [Automate It!](#automate-it!)
+7. [Automate It!](#automate-it\!)
 
 ### Google Project And Keys 
 Create the developer project by going to https://console.cloud.google.com/ and sign in
